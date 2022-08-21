@@ -1,32 +1,44 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+
+
+import NavBar from './components/NavBar/NavBar'
+
+import Home from './pages/Home/Home';
+import Dashboard from './pages/Dashboard/Dashboard';
+import MyActivity from './pages/MyActivity/MyActivity';
+import NewActivity from './pages/NewActivity/NewActivity';
+import Community from './pages/Community/Community';
+import Setting from './pages/Setting/Setting';
+import { default as SetGoalPage } from './pages/SetGoal/SetGoal';
+import SignIn from './pages/SignIn/SignIn';
+import SignUp from './pages/SignUp/SignUp';
+import NotFound from './pages/NotFound/NotFound';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <BrowserRouter>
+        {/* <NavBar /> */}
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/dashboard' element={<Dashboard />}/>
+          <Route path='/activities' element={<MyActivity/>}/>
+          <Route path='/community' element={<Community />}/>
+          <Route path='/Setting' element={<Setting />}/>
+          <Route path='/new-activity' element={<NewActivity />}/>
+          <Route path='/signin' element={<SignIn />}/>
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/SetGoal' element={<SetGoalPage />}/>
+          <Route path='*' element={<NotFound />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

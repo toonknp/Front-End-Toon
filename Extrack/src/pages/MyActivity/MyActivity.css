@@ -1,0 +1,26 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.my-activity {
+    /* padding-top: 72px; */
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.my-activity .sidebar {
+    width: 600px;
+    background-color: #fff573;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.my-activity .container {
+    min-width: 60%
+}
+
+.my-activity .container h1 {
+    text-align: left;
+    width: 80%;
+    margin: 3rem auto 1rem;
+}
