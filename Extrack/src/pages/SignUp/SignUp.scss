@@ -1,6 +1,9 @@
 .regis-form {
+
+    padding-top: 50px;
+
     h2 {
-        padding-top: 200x;
+        padding-top: 10px;
         padding-bottom: 10px;
     }
     
@@ -13,6 +16,8 @@
     background: #22345C;
     max-width: 100%;
     height: auto;
+    border-radius: 10%;
+    margin-top: 15px;
     }
 
     input {
@@ -32,7 +37,7 @@
         height: 49px;
         color: white;
         font-size: 16px;
-        margin-top: 15px;
+        margin-top: 20px;;
     }
 }
 

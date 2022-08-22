@@ -1,8 +1,8 @@
-import './MyActivity.css'
+import './MyActivity.scss'
 import { useState } from 'react'
 import testData from '../../components/CartList/testData'
 import CartList from '../../components/CartList/CardList'
-
+import ButtonAddActivity from '../../components/ButtonAddActivity/ButtonAddActivity'
 
 const MyActivity = () => {
   const [ cards, setCards ] = useState(testData)
@@ -19,11 +19,9 @@ const MyActivity = () => {
 
   return (
     <div className="my-activity">
-      <div className='sidebar'>
-        <h1>sidebar</h1>
-      </div>
       <div className='container'>
-        <h1>My Activity</h1>
+      <ButtonAddActivity />
+        <h1>My Activity</h1> 
         <CartList
           cards={cards}
           onRemove={removeCard}

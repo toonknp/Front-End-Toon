@@ -1,3 +1,7 @@
+.setGoal{
+    padding-top: 50px;
+}
+
 .setGoalPic {
     float: right;
     width: 640px;
@@ -5,10 +9,12 @@
     left: 0px;
     top: 0px;
     background: #22345C;
+    border-radius: 10%;
     
     img {
         max-width: 100%;
          height: auto;
+         
         }
     }
     
@@ -80,5 +86,6 @@
     
     h2 {
         margin-bottom: 50px;
+        margin-top: 0px;
     }
 }

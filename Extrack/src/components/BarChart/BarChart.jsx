@@ -62,7 +62,7 @@ function BarChart() {
               style: { fontSize: 18 },
             },
 
-            colors: ["#515A5A"],  //สีกราฟแท่ง 
+            colors: ["#22345C"],  //สีกราฟแท่ง 
             theme: { mode: "light" },
 
             xaxis: {
@@ -70,7 +70,7 @@ function BarChart() {
               categories: trackingName,  //ก่อนเอามาใช้ตรงนี้ต้องเปลี่ยนจาก objarray -> array ก่อน | ยังไม่ทำ!!
               title: {
                 text: "Day per week",
-                style: { color: "#F1C40F", fontSize: 17 },  //สีชื่อแกน x
+                style: { color: "#22345C", fontSize: 17 },  //สีชื่อแกน x
               },
             },
 
@@ -79,11 +79,11 @@ function BarChart() {
                 formatter: (val) => {
                   return `${val}`;
                 },
-                style: { fontSize: "15", colors: ["#34495E"] }, //สีอักษรแกน y
+                style: { fontSize: "15", colors: ["#22345C"] }, //สีอักษรแกน y
               },
               title: {
                 text: "Time (minute)",
-                style: { color: "#F1C40F", fontSize: 17 },  //สีแกน y
+                style: { color: "#22345C", fontSize: 17 },  //สีแกน y
               },
             },
 
