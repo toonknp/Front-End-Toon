@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
  import NavBar from './components/NavBar/NavBar'
 
-import Home from './pages/Home/Home';
+import HomePage from './pages/Home/HomePage';
 import Dashboard from './pages/Dashboard/Dashboard';
 import MyActivity from './pages/MyActivity/MyActivity';
 import NewActivity from './pages/NewActivity/NewActivity';
@@ -27,7 +27,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<HomePage/>}/>
           <Route path='/dashboard' element={<Dashboard />}/>
           <Route path='/activities' element={<MyActivity/>}/>
           <Route path='/community' element={<Community />}/>
