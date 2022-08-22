@@ -7,12 +7,14 @@
     display: inline-flex;
     width: 100%;
     margin: 0 auto;
+    background-color: #EFEFE9;
 }
 
 .my-activity .sidebar {
     width: 600px;
-    background-color: #fff573;
-    border-radius: 0 2rem 2rem 0;
+    background-color: #22345C;
+    border-radius: 0 0rem 0rem 0;
+    color : #EFEFE9
 }
 
 .my-activity .container {
@@ -23,4 +25,5 @@
     text-align: left;
     width: 80%;
     margin: 3rem auto 1rem;
+    color: #22345C
 }
